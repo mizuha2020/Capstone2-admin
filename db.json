@@ -1,0 +1,721 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "name": "Nguyen Anh Quoc 2",
+      "username": "quoc2",
+      "password": "123456",
+      "city": "Nha Trang",
+      "role": "user",
+      "favorites": [
+        {
+          "id": 1,
+          "name": "Bussibess"
+        },
+        {
+          "id": 2,
+          "name": "Travel"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Nguyen Anh Quoc 3",
+      "username": "quoc3",
+      "password": "123456",
+      "city": "Nha Trang",
+      "role": "user",
+      "favorites": [
+        {
+          "id": 1,
+          "name": "Bussibess"
+        },
+        {
+          "id": 2,
+          "name": "Travel"
+        },
+        {
+          "id": 3,
+          "name": "Covid in VietNam"
+        }
+      ]
+    },
+    {
+      "name": "Nguyễn Anh Quốc update",
+      "username": "update",
+      "password": "12312312",
+      "city": "Tỉnh Khánh Hòa",
+      "role": "Supporter",
+      "favorites": [],
+      "id": 4
+    },
+    {
+      "name": "Nguyen Anh Quoc 3asd",
+      "username": "quoc3",
+      "password": "123456",
+      "city": "Nha Trang",
+      "role": "Supporter",
+      "favorites": [
+        {
+          "id": 1,
+          "name": "Bussibess"
+        },
+        {
+          "id": 2,
+          "name": "Sport"
+        },
+        {
+          "id": 3,
+          "name": "Covid in VietNam"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "name": "Nguyen Anh Quoc 3asdasd",
+      "username": "quoc3",
+      "password": "123456",
+      "city": "Nha Trang",
+      "role": "Supporter",
+      "favorites": [
+        {
+          "id": 1,
+          "name": "Bussibess"
+        },
+        {
+          "id": 2,
+          "name": "Sport"
+        },
+        {
+          "id": 3,
+          "name": "Covid in VietNam"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "name": "Nguyen ",
+      "username": "quoc1",
+      "password": "123456",
+      "city": "Nha Trang",
+      "role": "User",
+      "favorites": [
+        {
+          "id": 1,
+          "name": "Bussibess"
+        },
+        {
+          "id": 2,
+          "name": "Social"
+        },
+        {
+          "id": 3,
+          "name": "Sport"
+        }
+      ],
+      "id": 10
+    },
+    {
+      "name": "Nguyễn Anh Quốc new",
+      "username": "update",
+      "password": "12312312",
+      "city": "Tỉnh Khánh Hòa",
+      "role": "Supporter",
+      "favorites": [
+        {
+          "id": 1,
+          "name": "Sport"
+        }
+      ],
+      "id": 11
+    }
+  ],
+  "sources": [
+    {
+      "id": 5,
+      "name": "Dan tri",
+      "link": "https://dantri.com"
+    },
+    {
+      "name": "vietnam express",
+      "link": "https://vietnamexpress.com",
+      "thumbnailUrl": "",
+      "id": 9
+    }
+  ],
+  "news": [
+    {
+      "id": "1",
+      "title": "Làm loại bánh dùng để cuốn, chị gái U40 kiếm 15 triệu đồng/tháng",
+      "content": "Hến sông Hương làm nên những món ăn ngon ngọt đặc trưng ẩm thực xứ Huế đã cạn kiệt nhiều năm nay, do môi trường sống bị thay đổi, ô nhiễm...",
+      "description": "Dan tri",
+      "created_at": "2022-04-23 08:14:55",
+      "updated_at": "2022-5-23 8:53:16"
+    },
+    {
+      "id": "2",
+      "title": "Ngư dân trên... núi kiếm nửa triệu đồng mỗi ngàyaaa",
+      "content": "Từ một ổ dế mua cách đây 6 năm, ông Lê Thanh Tường đã kiên trì tăng đàn, gầy dựng trại dế quy mô hơn 30 chuồng. Mỗi tháng ông xuất bán trên 400kg dế thịt, lãi từ hơn 20 triệu đồng.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:55",
+      "updated_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": "3",
+      "title": "Ông lão thương binh gây bất ngờ khi biến thứ bỏ đi thành vật dụng hữu ích",
+      "content": "Chuẩn bị bước vào kỳ nghỉ lễ 30/4 và 1/5, lượng khách đặt phòng tại các điểm du lịch của Thanh Hóa tăng khá cao, nhiều nơi đã phải dừng nhận khách do kín phòng.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:1213",
+      "updated_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": "4",
+      "title": "Rời Nhật Bản về quê, chàng trai tạo sự khác biệt trong nghề nuôi cá lồng",
+      "content": "Cứ đến dịp tháng 3 âm lịch hằng năm, người dân sống ven sông Cu Đê (phường Hòa Hiệp Bắc, quận Liên Chiều, TP Đà Nẵng) lại rủ nhau đổ ra bãi bồi giữa sông để săn con chem chép vào mùa.",
+      "description": "vietnam express",
+      "created_at": "2022-04-23 08:14:55",
+      "updated_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": "5",
+      "title": "Chưa có doanh nghiệp nợ đọng BHXH bị truy tố trước pháp luật",
+      "content": "Chiều 15/4, tại Quảng Nam, Cụm thi đua số 4 của BHXH Việt Nam gồm 9 tỉnh, thành từ Hà Tĩnh đến Phú Yên, tổ chức hội nghị tổng kết phong trào thi đua năm 2021, định hướng năm 2022.",
+      "description": "vietnam express",
+      "created_at": "2022-04-23 08:14:55",
+      "updated_at": "2022-5-20 22:27:33"
+    },
+    {
+      "id": "6",
+      "title": "Con đặc sản nằm ở đáy sông Hương khiến cả nông dân và nhà khoa học đều lo một dự báo xấu",
+      "content": "La Tử Lâm, cựu Hoa hậu Hoàn vũ Trung Quốc, xuất hiện hiếm hoi trong một vài bức ảnh trên mạng. Cô từng là niềm tự hào của showbiz Trung Quốc trước khi bị nhấn chìm sự nghiệp bởi bê bối giật bồ.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:55",
+      "updated_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": "7",
+      "title": "Con đặc sản nằm ở đáy sông Hương khiến cả nông dân và nhà khoa học đều lo một dự báo xấu",
+      "content": "Hàng năm, một thị trấn nhỏ ở phía bắc Honduras luôn xảy ra hiện tượng \"cơn mưa cá\" theo đúng nghĩa đen. Thậm chí, có năm xảy ra đôi ba lần.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:55",
+      "updated_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": "8",
+      "title": "Thủ khoa nuôi chó cảnh, bán trà sữa, thu trăm triệu mỗi tháng",
+      "content": "Từ một ổ dế mua cách đây 6 năm, ông Lê Thanh Tường đã kiên trì tăng đàn, gầy dựng trại dế quy mô hơn 30 chuồng. Mỗi tháng ông xuất bán trên 400kg dế thịt, lãi từ hơn 20 triệu đồng.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:55",
+      "updated_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": "9",
+      "title": "TPHCM cần 65.000 lao động trong quý 2, thu nhập trên 10 triệu đồng",
+      "content": "Trong tháng 4, TPHCM sẽ khởi công xây dựng 3 dự án nhà ở xã hội, nhà cho người thu nhập thấp ở TP Thủ Đức và huyện Bình Chánh để phục vụ công nhân.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:55",
+      "updated_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": "10",
+      "title": "Căn cứ xét tiếp nhận viên chức vào làm công chức",
+      "content": "Ông Trần Văn Minh (Quảng Nam) trúng tuyển viên chức tại Trung tâm Phát triển Quỹ đất thành phố.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:55",
+      "updated_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": "11",
+      "title": "Trường đại học \"top\" có trọng lượng đối với nhà tuyển dụng không?",
+      "content": "Với quy trình chăn nuôi hiện đại, khoa học, mỗi năm ông Trần Công Thành (SN 1967, Quảng Nam) thu lợi nhuận hàng tỷ đồng từ việc nuôi tôm sạch, chất lượng.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:55",
+      "updated_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": "12",
+      "title": "Mùa Tết, làng nghề tách vỏ hến tất bật đỏ lửa, \"đảo nước\"",
+      "content": "Những con cua được chọn kỹ lưỡng, nặng từ 800g đến 1kg, sau đó đem cắt tiết, rưới đều lên thịt cua, gạch cua, lạc rang và rau thơm,... tạo thành món tiết canh thanh mát, bổ dưỡng chỉ có ở Phú Quốc.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:55",
+      "updated_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": "13",
+      "title": "Con đặc sản nằm ở đáy sông Hương khiến cả nông dân và nhà khoa học đều lo một dự báo xấu",
+      "content": "Qua khảo sát, chính quyền địa phương tại Quảng Bình đã đưa cây ba kích về trồng dưới tán rừng của đồng bào Mã Liềng, giúp bà con phát triển kinh tế, xóa đói giảm nghèo.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:55",
+      "updated_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": "14",
+      "title": "8X nuôi loài cá lạ, bé bằng đầu đũa đã bán hết veo",
+      "content": "Từ bỏ công việc ở công ty dược, anh Nguyễn Phước Đạt (ở tỉnh Vĩnh Long) mạnh dạn phát triển nuôi và bán rồng Nam Mỹ, thu nhập bình quân mỗi năm từ 200 triệu đồng.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:55",
+      "updated_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": "15",
+      "title": "Căn cứ xét tiếp nhận viên chức vào làm công chức",
+      "content": "Ông Trần Văn Minh (Quảng Nam) trúng tuyển viên chức tại Trung tâm Phát triển Quỹ đất thành phố.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "16",
+      "title": "Làm loại bánh dùng để cuốn, chị gái U40 kiếm 15 triệu đồng/tháng",
+      "content": "Từ loại cây tưởng như chỉ có giá trị thấp một thời, đến nay, khi đã trở thành đặc sản được người sành ăn uống săn đón, cuộc sống người dân trong làng giàu lên nhanh chóng.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "17",
+      "title": "Chưa có doanh nghiệp nợ đọng BHXH bị truy tố trước pháp luật",
+      "content": "Chiều 15/4, tại Quảng Nam, Cụm thi đua số 4 của BHXH Việt Nam gồm 9 tỉnh, thành từ Hà Tĩnh đến Phú Yên, tổ chức hội nghị tổng kết phong trào thi đua năm 2021, định hướng năm 2022.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "18",
+      "title": "Nóng trong tuần: Chốt hướng tăng lương tối thiểu, găng chuyện rút bảo hiểm",
+      "content": "\"Phải đổi mới các hoạt động truyền thông, phổ biến giáo dục pháp luật, kiến thức, kỹ năng thực hiện quyền trẻ em phù hợp với từng nhóm đối tượng\", Thứ trưởng Bộ LĐ-TB&XH Nguyễn Thị Hà nhấn mạnh.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "19",
+      "title": "Lao động 17 tuổi có được làm việc ở cơ sở massage?",
+      "content": "Những dự án khu đô thị có tổng mức đầu tư lên tới hàng tỷ USD xuất hiện ngày càng nhiều ở Hà Nội và các vùng lân cận.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "20",
+      "title": "Bé gái 16 tuổi bị người tình của mẹ vụt gậy sắt đến bất tỉnh",
+      "content": "Một cô gái trẻ bị truy tố tội giết người và hành hạ người khác vì đánh chết con gái tình nhân. Một nữ ca sĩ nổi tiếng vừa phải xin lỗi vì quan hệ với người đã có gia đình...",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "21",
+      "title": "Nhận BHXH một lần, mất quyền lợi lương hưu khi về già",
+      "content": "\"Phải đổi mới các hoạt động truyền thông, phổ biến giáo dục pháp luật, kiến thức, kỹ năng thực hiện quyền trẻ em phù hợp với từng nhóm đối tượng\", Thứ trưởng Bộ LĐ-TB&XH Nguyễn Thị Hà nhấn mạnh.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "22",
+      "title": "Hỗ trợ thêm tối đa 5 triệu đồng người lao động bị ảnh hưởng bởi Covid-19",
+      "content": "Sau Tết, số công nhân mắc Covid-19 tại tỉnh Thanh Hóa tăng cao và phải điều trị tại nhà. Nhưng sau khi khỏi Covid-19, họ đang vướng mắc về các thủ tục để được hưởng chế độ bảo hiểm xã hội...",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "23",
+      "title": "Nín thở sau gần 10 năm trồng loại \"cây tỷ đô\"",
+      "content": "Ngay tại lễ phát động chương trình \"Nối vòng tay nhân ái vì người khuyết tật và trẻ mồ côi\" năm 2022, có 5.882.500.000 đồng đã được quyên góp cho hoạt động này.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "24",
+      "title": "Lao động thu nhập thấp chỉ dám \"đứng nhìn\" nhà ở xã hội",
+      "content": "\"Số lao động đã di chuyển khỏi Long An sau dịch Covid-19 là hơn 20%, một trong những lý do là điều kiện nhà ở chưa đảm bảo\" - Chủ tịch UBND tỉnh Long An nhấn mạnh.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "25",
+      "title": "Căn cứ xét tiếp nhận viên chức vào làm công chức",
+      "content": "Ông Trần Văn Minh (Quảng Nam) trúng tuyển viên chức tại Trung tâm Phát triển Quỹ đất thành phố.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "26",
+      "title": "Căn cứ xét tiếp nhận viên chức vào làm công chức",
+      "content": "Ông Trần Văn Minh (Quảng Nam) trúng tuyển viên chức tại Trung tâm Phát triển Quỹ đất thành phố.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "27",
+      "title": "Rời Nhật Bản về quê, chàng trai tạo sự khác biệt trong nghề nuôi cá lồng",
+      "content": "Cứ đến dịp tháng 3 âm lịch hằng năm, người dân sống ven sông Cu Đê (phường Hòa Hiệp Bắc, quận Liên Chiều, TP Đà Nẵng) lại rủ nhau đổ ra bãi bồi giữa sông để săn con chem chép vào mùa.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "28",
+      "title": "Con đặc sản nằm ở đáy sông Hương khiến cả nông dân và nhà khoa học đều lo một dự báo xấu",
+      "content": "Hàng năm, một thị trấn nhỏ ở phía bắc Honduras luôn xảy ra hiện tượng \"cơn mưa cá\" theo đúng nghĩa đen. Thậm chí, có năm xảy ra đôi ba lần.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "29",
+      "title": "Mùa Tết, làng nghề tách vỏ hến tất bật đỏ lửa, \"đảo nước\"",
+      "content": "Những con cua được chọn kỹ lưỡng, nặng từ 800g đến 1kg, sau đó đem cắt tiết, rưới đều lên thịt cua, gạch cua, lạc rang và rau thơm,... tạo thành món tiết canh thanh mát, bổ dưỡng chỉ có ở Phú Quốc.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "30",
+      "title": "Con đặc sản nằm ở đáy sông Hương khiến cả nông dân và nhà khoa học đều lo một dự báo xấu",
+      "content": "Qua khảo sát, chính quyền địa phương tại Quảng Bình đã đưa cây ba kích về trồng dưới tán rừng của đồng bào Mã Liềng, giúp bà con phát triển kinh tế, xóa đói giảm nghèo.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "31",
+      "title": "Bộ trưởng Đào Ngọc Dung nói về tình trạng rút, mua bán sổ bảo hiểm xã hội",
+      "content": "Chủ tịch Trần Bá Dương chia sẻ Thaco huy động vốn vay một cách chân phương từ các ngân hàng lớn, không sử dụng các đòn bẩy và không đầu tư vào ngân hàng hay định chế tài chính nào.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "32",
+      "title": "\"Dì ghẻ\" đánh chết con riêng của người tình: Mơ gì khi làm \"tiểu tam\"?",
+      "content": "\"Phải đổi mới các hoạt động truyền thông, phổ biến giáo dục pháp luật, kiến thức, kỹ năng thực hiện quyền trẻ em phù hợp với từng nhóm đối tượng\", Thứ trưởng Bộ LĐ-TB&XH Nguyễn Thị Hà nhấn mạnh.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "33",
+      "title": "Doanh nghiệp đầu tiên ở Hội An được vay vốn trả lương, khôi phục sản xuất",
+      "content": "\"Gần 100 triệu người dân được đảm bảo an sinh xã hội, cả nước có 54 triệu lao động, tỷ lệ thất nghiệp thành thị từ 2-3%. Thu nhập người dân tăng từ 30-40%, đạt trung bình gần 4.000 USD/người/năm…\".",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "34",
+      "title": "Ức chế bị sếp gạ gẫm, tự ý nghỉ việc, có được hưởng trợ cấp thất nghiệp?",
+      "content": "Ông Nguyễn Ngọc Giàu (Thừa Thiên Huế) vừa hoàn thành điều trị Covid-19 tại nhà (F0), Trạm Y tế phường chỉ cấp cho ông giấy hoàn thành cách ly.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:56",
+      "updated_at": "2022-04-23 08:14:56"
+    },
+    {
+      "id": "35",
+      "title": "Hơn 9.000 vị trí việc làm cần lao động tại Thừa Thiên Huế",
+      "content": "\"Phải đổi mới các hoạt động truyền thông, phổ biến giáo dục pháp luật, kiến thức, kỹ năng thực hiện quyền trẻ em phù hợp với từng nhóm đối tượng\", Thứ trưởng Bộ LĐ-TB&XH Nguyễn Thị Hà nhấn mạnh.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "36",
+      "title": "Lao động nước ngoài ở Việt Nam được giải quyết trợ cấp thôi việc ra sao?",
+      "content": "Mặc dù nhà hàng ở gần sân bay Haneda của Nhật Bản sử dụng tới 7 robot nhưng theo đài truyền hình NHK, hiện nay, việc tính tiền và xử lý rác thải ở nhà hàng này vẫn do con người thực hiện.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "37",
+      "title": "Sinh viên trường nghề đến thực tập, doanh nghiệp có lo ngại?",
+      "content": "\"Vimeco Kindergarten đón nhận các em bé với tất cả tình yêu thương và tôn trọng, hướng tới sự phát triển toàn diện để các con vững vàng, tự tin đặt những bước chân đầu tiên trên đường đời\" - CEO Bùi Thanh Hương chia sẻ.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "38",
+      "title": "Australia thay đổi chính sách giáo dục để đáp ứng nhu cầu lao động",
+      "content": "Ngày 21/4, Tổng cục giáo dục nghề nghiệp (GDNN) và Samsung Việt Nam đã ký kết Biên bản ghi nhớ chương trình hỗ trợ cho thí sinh tham dự Kỳ thi Tay nghề Thế giới lần thứ 46 tại Thượng Hải, Trung Quốc.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "39",
+      "title": "Lương \"lao dốc\", nhân viên y tế bệnh viện hạng 1 cay đắng nghỉ việc",
+      "content": "Học ngành Dệt may, chàng sinh viên tốt nghiệp xuất sắc Trương Văn Đạt được giữ lại công tác tại Trường ĐH Bách khoa TPHCM.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "40",
+      "title": "\"Vua dúi\" miền Tây chia sẻ bí quyết kiếm trăm triệu đồng mỗi tháng",
+      "content": "Sau khi bà ngoại mất vì Covid-19, K.H chỉ còn ông ngoại là chỗ dựa. Hơn nửa năm nay, ông thường chở cháu gái theo mình phụ hồ ở các công trình cách nhà trọ hàng chục km vì không có ai trông.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "41",
+      "title": "Nghề bán vỏ chai rượu tây: Ngồi vỉa hè Hà Nội thu 1 chỉ vàng/tháng",
+      "content": "Trải qua nghi thức đặc biệt, những người phụ nữ búi tóc lên, trở thành tự sơ nữ với lời thề cả đời sống độc thân, không bao giờ lấy chồng.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "42",
+      "title": "Công nhân hồi hộp \"ngóng\" hỗ trợ tiền thuê nhà",
+      "content": "Học ngành Dệt may, chàng sinh viên tốt nghiệp xuất sắc Trương Văn Đạt được giữ lại công tác tại Trường ĐH Bách khoa TPHCM.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "43",
+      "title": "Mùa Tết, làng nghề tách vỏ hến tất bật đỏ lửa, \"đảo nước\"",
+      "content": "Những con cua được chọn kỹ lưỡng, nặng từ 800g đến 1kg, sau đó đem cắt tiết, rưới đều lên thịt cua, gạch cua, lạc rang và rau thơm,... tạo thành món tiết canh thanh mát, bổ dưỡng chỉ có ở Phú Quốc.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "44",
+      "title": "Thanh Hóa: Dừng xây dựng đề án quy hoạch phát triển cây \"tỷ đô\"",
+      "content": "Cách đây một năm, một centimet lan đột biến có giá hàng chục, thậm chí hàng trăm triệu đồng. Thời người người, nhà nhà \"sốt\" theo lan đột biến đã là dĩ vãng, giờ hoa rẻ hơn rau muống bán không ai mua.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "45",
+      "title": "Con đặc sản nằm ở đáy sông Hương khiến cả nông dân và nhà khoa học đều lo một dự báo xấu",
+      "content": "Qua khảo sát, chính quyền địa phương tại Quảng Bình đã đưa cây ba kích về trồng dưới tán rừng của đồng bào Mã Liềng, giúp bà con phát triển kinh tế, xóa đói giảm nghèo.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "46",
+      "title": "8X nuôi loài cá lạ, bé bằng đầu đũa đã bán hết veo",
+      "content": "Từ bỏ công việc ở công ty dược, anh Nguyễn Phước Đạt (ở tỉnh Vĩnh Long) mạnh dạn phát triển nuôi và bán rồng Nam Mỹ, thu nhập bình quân mỗi năm từ 200 triệu đồng.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "47",
+      "title": "Con đặc sản nằm ở đáy sông Hương khiến cả nông dân và nhà khoa học đều lo một dự báo xấu",
+      "content": "Hàng năm, một thị trấn nhỏ ở phía bắc Honduras luôn xảy ra hiện tượng \"cơn mưa cá\" theo đúng nghĩa đen. Thậm chí, có năm xảy ra đôi ba lần.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "48",
+      "title": "Con đặc sản nằm ở đáy sông Hương khiến cả nông dân và nhà khoa học đều lo một dự báo xấu",
+      "content": "La Tử Lâm, cựu Hoa hậu Hoàn vũ Trung Quốc, xuất hiện hiếm hoi trong một vài bức ảnh trên mạng. Cô từng là niềm tự hào của showbiz Trung Quốc trước khi bị nhấn chìm sự nghiệp bởi bê bối giật bồ.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "49",
+      "title": "Chưa có doanh nghiệp nợ đọng BHXH bị truy tố trước pháp luật",
+      "content": "Chiều 15/4, tại Quảng Nam, Cụm thi đua số 4 của BHXH Việt Nam gồm 9 tỉnh, thành từ Hà Tĩnh đến Phú Yên, tổ chức hội nghị tổng kết phong trào thi đua năm 2021, định hướng năm 2022.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "id": "50",
+      "title": "Căn cứ xét tiếp nhận viên chức vào làm công chức",
+      "content": "Ông Trần Văn Minh (Quảng Nam) trúng tuyển viên chức tại Trung tâm Phát triển Quỹ đất thành phố.",
+      "description": "Dan Tri bao moi",
+      "created_at": "2022-04-23 08:14:57",
+      "updated_at": "2022-04-23 08:14:57"
+    },
+    {
+      "title": "officiis aliquid id esse voluptas dolores",
+      "content": "Hến sông Hương làm nên những món ăn ngon ngọt đặc trưng ẩm thực xứ Huế đã cạn kiệt nhiều năm nay, do môi trường sống bị thay đổi, ô nhiễm...",
+      "description": "123123",
+      "created_at": "2022-5-20 21:46:59",
+      "id": "LlLotSr"
+    },
+    {
+      "title": "ads",
+      "content": "a",
+      "description": "test a",
+      "created_at": "2022-5-20 22:2:32",
+      "id": "GIdhHuC"
+    },
+    {
+      "title": "adsad",
+      "content": "weqqwe",
+      "created_at": "2022-5-20 22:2:50",
+      "id": "LdlSklU"
+    },
+    {
+      "title": "asd",
+      "content": "zxczc",
+      "description": "Dan tri",
+      "created_at": "2022-5-20 22:3:12",
+      "id": "IUyxr8Q"
+    }
+  ],
+  "feedbacks": [
+    {
+      "id": 1,
+      "username": "quoc1",
+      "newsId": 3,
+      "type": 1,
+      "description": "sai thong tin",
+      "update_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": 2,
+      "username": "quoc2",
+      "newsId": 4,
+      "type": 2,
+      "description": "sai thong tin",
+      "update_at": "2022-05-23 08:14:55"
+    },
+    {
+      "id": 3,
+      "username": "quoc3",
+      "newsId": 6,
+      "type": 1,
+      "description": "sai nguon",
+      "update_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": 4,
+      "username": "quoc4",
+      "newsId": 2,
+      "type": 1,
+      "description": "link khong truy cap duoc",
+      "update_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": 6,
+      "username": "quoc1",
+      "newsId": 3,
+      "type": 1,
+      "description": "sai thong tin",
+      "update_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": 7,
+      "username": "quoc1",
+      "newsId": 3,
+      "type": 1,
+      "description": "sai thong tin",
+      "update_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": 8,
+      "username": "quoc1",
+      "newsId": 3,
+      "type": 1,
+      "description": "sai thong tin",
+      "update_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": 9,
+      "username": "quoc1",
+      "newsId": 3,
+      "description": "sai thong tin",
+      "update_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": 10,
+      "username": "quoc1",
+      "newsId": 3,
+      "type": 1,
+      "description": "sai thong tin",
+      "update_at": "2022-04-23 08:14:55"
+    },
+    {
+      "id": 11,
+      "username": "quoc1",
+      "newsId": 3,
+      "type": 1,
+      "description": "sai thong tin",
+      "update_at": "2022-04-23 08:14:55"
+    }
+  ],
+  "events": [
+    {
+      "content": "<ol><li>asddddddddddddd</li><li>asd</li><li>asd</li><li>a</li><li>sd</li><li>asd</li><li>&nbsp;</li></ol>",
+      "description": "Dan tri",
+      "created_at": "2022-5-24 12:38:46",
+      "updated_at": "2022-04-23 08:14:55",
+      "header": "event1",
+      "cover": "qwesadzc",
+      "physic": [
+        123123,
+        1231231
+      ],
+      "gallery": [
+        "asdasd",
+        "asdasds"
+      ],
+      "timeline": [
+        {
+          "time": "2022-04-23 08:14:55",
+          "tittle": "Ông lão thương binh gây bất ngờ khi biến thứ bỏ đi thành vật dụng hữu ích",
+          "content": "Chuẩn bị bước vào kỳ nghỉ lễ 30/4 và 1/5, lượng khách đặt phòng tại các điểm du lịch của Thanh Hóa tăng khá cao, nhiều nơi đã phải dừng nhận khách do kín phòng.",
+          "url": "https://github.com/"
+        },
+        {
+          "time": "2022-04-23 08:14:55",
+          "tittle": "Thủ khoa nuôi chó cảnh, bán trà sữa, thu trăm triệu mỗi tháng",
+          "content": "Từ một ổ dế mua cách đây 6 năm, ông Lê Thanh Tường đã kiên trì tăng đàn, gầy dựng trại dế quy mô hơn 30 chuồng. Mỗi tháng ông xuất bán trên 400kg dế thịt, lãi từ hơn 20 triệu đồng.",
+          "url": "https://github.com/"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "content": "<p>asdasda</p><p>covid</p>",
+      "description": "Dan tri",
+      "created_at": "2022-5-24 12:44:44",
+      "updated_at": "2022-04-23 08:14:55",
+      "header": "test2",
+      "type": "Covid",
+      "cover": "sdasd",
+      "physic": [
+        123,
+        12312
+      ],
+      "gallery": [
+        "zczc",
+        "zqweqweqwe"
+      ],
+      "timeline": [
+        {
+          "time": "2022-04-23 08:14:55",
+          "tittle": "Trường đại học \"top\" có trọng lượng đối với nhà tuyển dụng không?",
+          "content": "Với quy trình chăn nuôi hiện đại, khoa học, mỗi năm ông Trần Công Thành (SN 1967, Quảng Nam) thu lợi nhuận hàng tỷ đồng từ việc nuôi tôm sạch, chất lượng.",
+          "url": "https://github.com/"
+        },
+        {
+          "time": "2022-04-23 08:14:56",
+          "tittle": "Căn cứ xét tiếp nhận viên chức vào làm công chức",
+          "content": "Ông Trần Văn Minh (Quảng Nam) trúng tuyển viên chức tại Trung tâm Phát triển Quỹ đất thành phố.",
+          "url": "https://github.com/"
+        }
+      ],
+      "id": 2
+    }
+  ]
+}
