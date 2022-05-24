@@ -30,7 +30,7 @@ function Feedback() {
   }, []);
   //get news
   const getNewFeedback = async (id) => {
-    await fetch(`http://localhost:3000/news/${id}`)
+    await fetch(`https://vietnamnewsmap.herokuapp.com/news/${id}`)
       .then((response) => {
         if (response.ok) {
           return response.json();

@@ -39,20 +39,20 @@ function BarChart({ userList }) {
     });
   }, [userList]);
   const counts = {};
-  array.forEach(function (x) {
+  array.forEach(function(x) {
     counts[x] = (counts[x] || 0) + 1;
   });
   const data = {
-    labels: ["Bussibess", "Travel", "Covid in VietNam", "Social", "Sport"],
+    labels: ["Bussiness", "Travel", "Covid in VietNam", "Social", "Sport"],
     datasets: [
       {
         label: "subcriber",
         data: [
-          counts["Bussibess"],
-          counts["Travel"],
-          counts["Covid in VietNam"],
-          counts["Social"],
-          counts["Sport"],
+          counts["Bussiness"] / 2,
+          counts["Travel"] / 2,
+          counts["Covid in VietNam"] / 2,
+          counts["Social"] / 2,
+          counts["Sport"] / 2,
         ],
         backgroundColor: "rgba(255, 99, 132, 0.5)",
       },

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Loader from "./Loader";
 import Pagination from "./Pagination";
-import Editor from "./Editor";
 const _ = require("lodash");
 const DEFAULT_DATA = {
   title: "",
@@ -13,7 +12,7 @@ const DEFAULT_ERROR = {
   content: false,
 };
 const NAME_PATTERN = /^[\D0-9]+$/g;
-const API = "http://localhost:3000/";
+const API = "https://vietnamnewsmap.herokuapp.com/";
 function News() {
   // data
   const [data, setData] = useState(DEFAULT_DATA);
@@ -78,7 +77,7 @@ function News() {
       });
   };
   const getListSources = async () => {
-    await fetch(`${API}sources`)
+    await fetch(`http://localhost:3000/sources`)
       .then((response) => {
         if (response.ok) {
           return response.json();
@@ -242,7 +241,9 @@ function News() {
                     >
                       <option disabled>select</option>
                       <option value="5">5</option>
-                      <option value="10">10</option>
+                      <option value="10" selected>
+                        10
+                      </option>
                       <option value="20">20</option>
                       <option value="50">50</option>
                     </select>
@@ -392,9 +393,6 @@ function News() {
                       </option>
                     ))}
                   </select>
-                </div>
-                <div className="form-group">
-                  <Editor />
                 </div>
                 {/* <div className="form-group">
                   <label>Created at</label>

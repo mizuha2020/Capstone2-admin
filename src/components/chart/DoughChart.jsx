@@ -5,10 +5,10 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 function DoughChart({ userList }) {
   const [array, setArray] = useState([]);
   useEffect(() => {
-      userList.forEach((user) => setArray((array) => [...array, user.role]));
+    userList.forEach((user) => setArray((array) => [...array, user.role]));
   }, [userList]);
   const counts = {};
-  array.forEach(function (x) {
+  array.forEach(function(x) {
     counts[x] = (counts[x] || 0) + 1;
   });
   const data = {
@@ -16,7 +16,11 @@ function DoughChart({ userList }) {
     datasets: [
       {
         label: "# of Votes",
-        data: [counts["User"], counts["Admin"], counts["Supporter"]],
+        data: [
+          counts["User"] / 2,
+          counts["Admin"] / 2,
+          counts["Supporter"] / 2,
+        ],
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",
           "rgba(54, 162, 235, 0.2)",

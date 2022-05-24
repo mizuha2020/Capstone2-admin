@@ -102,11 +102,12 @@ function Event() {
     const newData = createData(data);
     console.log("create", newData);
     await fetch(`${API}events`, {
-    // await fetch(`http://localhost:3000/events`, {
+      // await fetch(`http://localhost:3000/events`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         ...newData,
+        link: `https://dantri.com.vn/${data.link}`,
         type: data.type,
         physic: [parseFloat(data.x), parseFloat(data.y)],
         content: content,
@@ -117,13 +118,13 @@ function Event() {
             time: news1.created_at,
             tittle: news1.title,
             content: news1.content,
-            url: "https://github.com/",
+            url: `https://dantri.com.vn/${news1.link}`,
           },
           {
             time: news2.created_at,
             tittle: news2.title,
             content: news2.content,
-            url: "https://github.com/",
+            url: `https://dantri.com.vn/${news2.link}`,
           },
         ],
       }),
@@ -320,6 +321,12 @@ function Event() {
                 Update Event
               </h4>
               <br />
+              <div className="form-group">
+                <a href={`https://dantri.com.vn/${data.link}`}>
+                  <label htmlFor="exampleTextarea1">Link news</label>
+                </a>
+              </div>
+              <br />
               <form className="forms-sample">
                 <div className="form-group">
                   <label htmlFor="exampleTextarea1">Header</label>
@@ -443,7 +450,7 @@ function Event() {
                     id="exampleInputName1"
                   />
                 </div>
-                <div className="form-group">
+                {/* <div className="form-group">
                   <label htmlFor="exampleTextarea1">Title</label>
                   <input
                     name="title"
@@ -467,7 +474,7 @@ function Event() {
                     />
                     <div className="question__form__img-review"></div>
                   </div>
-                </div>
+                </div> */}
                 <div className="form-group">
                   <label htmlFor="exampleInputName1">Related news</label>
                   <br />

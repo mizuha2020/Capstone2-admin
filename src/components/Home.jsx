@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import circle from "../assets/images/dashboard/circle.svg";
 import DoughChart from "./chart/DoughChart";
 import BarChart from "../components/chart/BarChart";
-const API = "http://localhost:3000/";
+const API = "https://vietnamnewsmap.herokuapp.com/";
 function Home() {
   const [users, setUsers] = useState([]);
   const [sources, setSources] = useState([]);
@@ -26,7 +26,7 @@ function Home() {
       });
   }, []);
   useEffect(() => {
-    fetch(`${API}sources`)
+    fetch(`http://localhost:3000/sources`)
       .then((response) => {
         if (response.ok) {
           return response.json();

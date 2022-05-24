@@ -13,7 +13,11 @@ import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
 import SignIn from "./components/SignIn";
 function App() {
-  const [currentUser, setCurrentUser] = useState({ username: "Admin" });
+  const [isAdmin, setIsAdmin] = useState(true);
+  const [currentUser, setCurrentUser] = useState({
+    username: "Admin",
+    role: "Admin",
+  });
   const [indexMenu, setIndexMenu] = useState(0);
   const menuPage = ["Home", "User", "Source", "News", "Feedback"];
   const handleMenu = (index) => {
@@ -22,17 +26,28 @@ function App() {
   const getCurrentUser = (user) => {
     setCurrentUser(user);
   };
+  const getRole = (role) => {
+    setIsAdmin(role);
+  };
   return (
     <div className="container-scroller">
       {indexMenu == 99 ? (
         <>
-          <SignIn onCurrentUser={getCurrentUser} onClickMenu={handleMenu} />
+          <SignIn
+            onIsAdmin={getRole}
+            onCurrentUser={getCurrentUser}
+            onClickMenu={handleMenu}
+          />
         </>
-      ) : (
+      ) : isAdmin ? (
         <>
           <Header currentUser={currentUser} onClickMenu={handleMenu} />
           <div className="container-fluid page-body-wrapper">
-            <Sidebar onClickMenu={handleMenu} />
+            <Sidebar
+              isAdmin={true}
+              currentUser={currentUser}
+              onClickMenu={handleMenu}
+            />
             <div className="main-panel" style={{ marginLeft: "300px" }}>
               {menuPage[indexMenu] == "Home" ? (
                 <Home menu={indexMenu} />
@@ -41,13 +56,28 @@ function App() {
               ) : menuPage[indexMenu] == "Source" ? (
                 <Source menu={indexMenu} />
               ) : menuPage[indexMenu] == "News" ? (
-                // <News menu={indexMenu} />
-                <Event menu={indexMenu} />
-              ) : menuPage[indexMenu] == "Feedback" ? (
+                <News menu={indexMenu} />
+              ) : // <Event menu={indexMenu} />
+              menuPage[indexMenu] == "Feedback" ? (
                 <Feedback menu={indexMenu} />
               ) : (
                 ""
               )}
+              <Footer></Footer>
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <Header currentUser={currentUser} onClickMenu={handleMenu} />
+          <div className="container-fluid page-body-wrapper">
+            <Sidebar
+              isAdmin={false}
+              currentUser={currentUser}
+              onClickMenu={handleMenu}
+            />
+            <div className="main-panel" style={{ marginLeft: "300px" }}>
+              <Event menu={indexMenu} />
               <Footer></Footer>
             </div>
           </div>

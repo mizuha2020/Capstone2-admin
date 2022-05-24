@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 const DEFAULT_ADMIN = {
   username: "",
   password: "",
+  role: "",
 };
 function SignIn(props) {
   const [admin, setAdmin] = useState(DEFAULT_ADMIN);
-  const [userList, setUserList] = useState([]);
+  const [adminList, setAdminList] = useState([]);
+  const [supList, setSupList] = useState([]);
   const [err, setErr] = useState(false);
   useEffect(() => {
     getUser();
@@ -20,10 +22,10 @@ function SignIn(props) {
         throw response;
       })
       .then((data) => {
-        const admin = data.filter(
-          (user) => user.role == "Admin" || user.role == "Supporter"
-        );
-        setUserList(admin);
+        const admin = data.filter((user) => user.role == "Admin");
+        setAdminList(admin);
+        const sup = data.filter((sup) => sup.role == "Supporter");
+        setSupList(sup);
       })
       .catch((error) => {
         console.error("Fetching Error: ", error);
@@ -31,13 +33,24 @@ function SignIn(props) {
   };
   const handleSignIn = () => {
     if (
-      userList.some(
+      adminList.some(
         (user) =>
           user.username == admin.username && user.password == admin.password
       )
     ) {
-      alert("ok");
-      props.onCurrentUser(admin);
+      alert("ok admin");
+      props.onIsAdmin(true);
+      props.onCurrentUser({ ...admin, role: "Admin" });
+      props.onClickMenu(0);
+    } else if (
+      supList.some(
+        (user) =>
+          user.username == admin.username && user.password == admin.password
+      )
+    ) {
+      alert("ok sup");
+      props.onIsAdmin(false);
+      props.onCurrentUser({ ...admin, role: "Supporter" });
       props.onClickMenu(0);
     } else setErr(true);
   };

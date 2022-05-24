@@ -30,25 +30,38 @@ function SideBar(props) {
               <span className="login-status online"></span>
             </div>
             <div className="nav-profile-text d-flex flex-column">
-              <span className="font-weight-bold mb-2">Admin</span>
-              <span className="text-secondary text-small">Project Manager</span>
+              <span className="font-weight-bold mb-2">
+                {props.currentUser.username}
+              </span>
+              <span className="text-secondary text-small">
+                {props.currentUser.role}
+              </span>
             </div>
             <i className="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
           </a>
         </li>
-        {sideBarMenu.map((menuElement, index) => (
-          <li
-            style={{ cursor: "pointer" }}
-            className={`${index == menu ? "active" : ""} nav-item`}
-            key={menuElement.name}
-            onClick={(e) => handleSelect(e, index)}
-          >
-            <Link className="nav-link" to={`/${menuElement.name}`}>
-              <span className="menu-title">{menuElement.name}</span>
-              <i className={`${menuElement.icon} menu-icon`}></i>
+        {props.isAdmin ? (
+          sideBarMenu.map((menuElement, index) => (
+            <li
+              style={{ cursor: "pointer" }}
+              className={`${index == menu ? "active" : ""} nav-item`}
+              key={menuElement.name}
+              onClick={(e) => handleSelect(e, index)}
+            >
+              <Link className="nav-link" to={`/${menuElement.name}`}>
+                <span className="menu-title">{menuElement.name}</span>
+                <i className={`${menuElement.icon} menu-icon`}></i>
+              </Link>
+            </li>
+          ))
+        ) : (
+          <li style={{ cursor: "pointer" }} className="active nav-item ">
+            <Link className="nav-link" to="/Editor">
+              <span className="menu-title">Editor</span>
+              <i className="menu-icon mdi mdi-table-edit"></i>
             </Link>
           </li>
-        ))}
+        )}
       </ul>
     </nav>
   );
