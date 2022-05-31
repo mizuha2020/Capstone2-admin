@@ -129,6 +129,7 @@ function Event() {
         ],
       }),
     });
+    alert("Create Success");
     renderList();
     setData(DEFAULT_DATA);
   };
@@ -321,6 +322,8 @@ function Event() {
                 Update Event
               </h4>
               <br />
+              {`Title: ${data.title}`}
+              <br />
               <div className="form-group">
                 <a href={`https://dantri.com.vn/${data.link}`}>
                   <label htmlFor="exampleTextarea1">Link news</label>
@@ -441,6 +444,7 @@ function Event() {
                     className="form-control"
                     id="exampleInputName1"
                   />
+                  <br />
                   <input
                     name="pic2"
                     value={data.pic2}
@@ -476,7 +480,9 @@ function Event() {
                   </div>
                 </div> */}
                 <div className="form-group">
-                  <label htmlFor="exampleInputName1">Related news</label>
+                  <label htmlFor="exampleInputName1">
+                    <b>Related news</b>
+                  </label>
                   <br />
                   <label htmlFor="exampleInputName1">News1</label>
                   <select
@@ -494,6 +500,7 @@ function Event() {
                       </option>
                     ))}
                   </select>
+                  <br />
                   <label htmlFor="exampleInputName1">News2</label>
                   <select
                     value={data.news2}

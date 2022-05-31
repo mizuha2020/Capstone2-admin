@@ -103,6 +103,7 @@ function News() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ ...data, updated_at: getTimeNow() }),
         });
+        alert("Upadte Success");
       } else {
         const newData = createData(data);
         console.log("create", newData);
@@ -111,6 +112,7 @@ function News() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ ...newData, created_at: getTimeNow() }),
         });
+        alert("Create Success");
       }
       renderList();
       setData(DEFAULT_DATA);
@@ -129,6 +131,7 @@ function News() {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
     });
+    alert("Delete Success");
     setData(DEFAULT_DATA);
     renderList();
   };

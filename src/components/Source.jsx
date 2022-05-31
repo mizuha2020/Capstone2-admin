@@ -69,6 +69,7 @@ function Source() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),
         });
+        alert("Upadte Success");
       } else {
         const newData = createData(data);
         console.log("create", newData);
@@ -77,6 +78,7 @@ function Source() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(newData),
         });
+        alert("Create Success");
       }
       renderList();
       setData(DEFAULT_DATA);
@@ -95,6 +97,7 @@ function Source() {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
     });
+    alert("Delete Success");
     setData(DEFAULT_DATA);
     renderList();
   };
